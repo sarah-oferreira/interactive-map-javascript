@@ -12,11 +12,11 @@ O projeto foi criado como uma proposta visual e educativa para apresentar concei
 
 ## 🚀 Funcionalidades
 
-- 🌎 Visualização de mapa mundial
-- 🚢 Animação de movimentação de barco
-- 🌐 Seleção de diferentes destinos
-- 🖱️ Interação com elementos da página
-- ⚡ Manipulação do DOM utilizando JavaScript
+-  Visualização de mapa mundial
+-  Animação de movimentação de barco
+-  Seleção de diferentes destinos
+-  Interação com elementos da página
+-  Manipulação do DOM utilizando JavaScript
 
 ## 🛠️ Tecnologias utilizadas
 
