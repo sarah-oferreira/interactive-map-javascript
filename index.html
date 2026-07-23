@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagens/aguia.png" type="image/x-icon">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:slnt,wght@-7,100..1000&family=Anton&family=Bebas+Neue&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:slnt,wght@-7,100..1000&family=Anton&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+    <title> Feira Cultural </title>
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <a href="index.html" target="_self"><img src="Imagens/aguia.png" alt="Info" width="100px"></a>
+        </nav>
+    </header>
+
+    <section>
+        <article>
+
+            <div class="titulo">
+                <h1> LEVE A CARGA DO PORTO PARA O PAÍS DESEJADO </h1>
+            </div>
+
+            <div class="fundo">
+
+                <div class="mapa">
+                  <img class="foto" src="Imagens/mapa-mundi.png" alt="Mapa Mundi" />
+                </div>
+          
+            </div>
+            
+              <div class="selecione">
+            <label for="destino">Escolha um destino:</label>
+    <select id="destino" onchange="mostrarImagens()">
+        <option value="selecione">Selecione</option>
+        <option value="estadosunidos">Estados Unidos </option>
+        <option value="Japão">Japão</option>
+        <option value="espanha">Espanha</option>
+    </select>
+</div>
+    <button onclick="viajar()">Mover</button>
+   <div class="container">
+    <img id="barco" class="barco" src="barco.png" class="imagem-barco" alt="Barco" width="100px">
+</div>
+
+    
+    
+</div>
+</article>
+</section>
+<style>
+    * {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    text-align: justify;
+}
+
+header {
+    text-align: center;
+    padding: 0px;
+    background-color: #800080;
+    color: white;
+}
+
+footer {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+article {
+    padding-top: 30px;
+}
+
+.fundo {
+    text-align: right;
+    width: 1000px;
+    height: 570px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+.mapa {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+.titulo {
+    text-align: center;
+    padding-bottom: 30px;
+    color: black;
+    font-size: 40px;
+}
+
+.foto {
+    width: 100%;
+}
+
+.selecione {
+    padding-top: 30px;
+    color: black;
+    text-align: center;
+}
+
+.selecione select {
+    border-radius: 5px;
+    font-size: 22px;
+    background-color: white;
+    color: #800080;
+}
+
+button{
+background-color: #800080 ;
+color:black;
+font-size: 1rem;
+font-weight: 600;
+
+border-radius: 0.5rem;
+border: none;
+transition: 0.3s;
+position: absolute;
+
+right: 350px;
+padding: 10px 20px;
+font-size: 16px;
+width: 150px;
+height: 40px;
+
+}
+button:hover{
+    background-color:#e4bfe4;
+    cursor: pointer;
+}
+
+.conteudo {
+    text-align: center;
+    height: 60vh;
+}
+.barco {
+            
+        
+            position: absolute;
+            left: 500px;
+            top: -230px;
+            transition: left 1s;
+        }
+        .imagens {
+            
+            display: none;
+            margin-top: -8px;
+            margin-left: 1000px;
+           
+        }
+        
+        .container {
+            display: flex;
+            margin: 20px; 
+           width: 400px; ; 
+            height: auto;
+            position: relative;
+            height: 25vh;
+        }
+        
+    .estadosunidos{
+        transform: translateY(-590px);
+            top: -200px;
+            margin-left: -650px;
+    }
+    .Japão{
+        transform: translateY(-580px);
+            top: -200px;
+            margin-left: 50px;
+    }
+
+    .espanha{
+        transform: translateY(-590px);
+            top: -200px;
+            margin-left: -362px;
+    }
+</style>
+<script>
+    function mostrarImagens() {
+            const destino = document.getElementById('destino').value;
+            const imagens = document.querySelectorAll('.imagens');
+
+           
+            imagens.forEach(img => img.style.display = 'none');
+
+            
+            if (destino) {
+                document.getElementById(destino).style.display = 'block';
+            }
+        }
+   
+       
+        function viajar() {
+            const barco = document.getElementById('barco');
+            const destino = document.getElementById('destino').value;
+ 
+            let top = '-200px'; 
+            let left = '500px'; 
+
+          
+            if (!destino) {
+                alert("Por favor, selecione um destino!");
+                return;
+            }
+
+            
+            
+            if (destino === 'estadosunidos') {
+                    top = '-390px' ; 
+                    left = '400px';
+                    barco.style.transition = "all 1s"; 
+                } else if (destino === 'Japão') { 
+                    top = '-390px'; 
+                    left = '1000px';
+                    barco.style.transition = "all 1s"; 
+                } else if (destino === 'espanha') {
+                    top = '-410px'; 
+                    left = '600px';
+                    barco.style.transition = "all 1s"; 
+                } else {
+                    top= '-200px';
+                    left= '500px';
+                    barco.style.transition = "all 1s"; 
+                }
+
+
+            barco.style.top = top;
+            barco.style.left = left;
+           
+        }
+</script>
+</html>
