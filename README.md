@@ -8,7 +8,9 @@ A aplicação apresenta um mapa mundial interativo onde o usuário pode escolher
 
 Após selecionar o local desejado, um barco é movimentado pelo mapa utilizando JavaScript, simulando uma viagem do porto até o país escolhido.
 
-O projeto foi criado como uma proposta visual e educativa para apresentar conceitos de programação e desenvolvimento web durante a Feira Cultural.
+O projeto foi desenvolvido para apresentação na Feira Cultural do curso Técnico em Informática, sendo planejado para utilização em telas maiores, como monitores e displays de apresentação, proporcionando uma experiência visual e interativa para o público.
+
+Por ter sido desenvolvido com foco em uma apresentação presencial, a interface possui dimensões ajustadas para telas grandes, como monitores e televisores de pequeno porte.
 
 ## 🚀 Funcionalidades
 
