@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Imagens/aguia.png" type="image/x-icon">
+    <link rel="shortcut icon" href="aguia.png" type="image/x-icon">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
@@ -23,7 +23,7 @@
     
     <header>
         <nav>
-            <a href="index.html" target="_self"><img src="Imagens/aguia.png" alt="Info" width="100px"></a>
+            <a href="index.html" target="_self"><img src="aguia.png" alt="Info" width="100px"></a>
         </nav>
     </header>
 
@@ -37,30 +37,27 @@
             <div class="fundo">
 
                 <div class="mapa">
-                  <img class="foto" src="Imagens/mapa-mundi.png" alt="Mapa Mundi" />
+                  <img class="foto" src="mapa-mundi.png" alt="Mapa Mundi" />
                 </div>
           
             </div>
             
-              <div class="selecione">
-            <label for="destino">Escolha um destino:</label>
-    <select id="destino" onchange="mostrarImagens()">
-        <option value="selecione">Selecione</option>
-        <option value="estadosunidos">Estados Unidos </option>
-        <option value="Japão">Japão</option>
-        <option value="espanha">Espanha</option>
-    </select>
-</div>
-    <button onclick="viajar()">Mover</button>
-   <div class="container">
-    <img id="barco" class="barco" src="barco.png" class="imagem-barco" alt="Barco" width="100px">
-</div>
-
-    
-    
-</div>
-</article>
-</section>
+            <div class="selecione">
+                 <label for="destino">Escolha um destino:</label>
+                 <select id="destino" onchange="mostrarImagens()">
+                      <option value="selecione">Selecione</option>
+                      <option value="estadosunidos">Estados Unidos </option>
+                      <option value="Japão">Japão</option>
+                      <option value="espanha">Espanha</option>
+                 </select>
+            </div>
+            <button onclick="viajar()">Mover</button>
+            <div class="container">
+                 <img id="barco" class="barco" src="barco.png" class="imagem-barco" alt="Barco" width="100px">
+            </div>
+       </div>
+    </article>
+ </section>
 <style>
     * {
     padding: 0px;
@@ -138,21 +135,21 @@ article {
 }
 
 button{
-background-color: #800080 ;
-color:black;
-font-size: 1rem;
-font-weight: 600;
+  background-color: #800080 ;
+  color:black;
+  font-size: 1rem;
+  font-weight: 600;
 
-border-radius: 0.5rem;
-border: none;
-transition: 0.3s;
-position: absolute;
+  border-radius: 0.5rem;
+  border: none;
+  transition: 0.3s;
+  position: absolute;
 
-right: 350px;
-padding: 10px 20px;
-font-size: 16px;
-width: 150px;
-height: 40px;
+  right: 350px;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 150px;
+  height: 40px;
 
 }
 button:hover{
@@ -165,46 +162,41 @@ button:hover{
     height: 60vh;
 }
 .barco {
-            
+    position: absolute;
+    left: 500px;
+    top: -230px;
+    transition: left 1s;
+}
+.imagens { 
+    display: none;
+    margin-top: -8px;
+    margin-left: 1000px;
+}
         
-            position: absolute;
-            left: 500px;
-            top: -230px;
-            transition: left 1s;
-        }
-        .imagens {
-            
-            display: none;
-            margin-top: -8px;
-            margin-left: 1000px;
-           
-        }
+.container {
+    display: flex;
+    margin: 20px; 
+    width: 400px; ; 
+    height: auto;
+    position: relative;
+    height: 25vh;
+}
         
-        .container {
-            display: flex;
-            margin: 20px; 
-           width: 400px; ; 
-            height: auto;
-            position: relative;
-            height: 25vh;
-        }
-        
-    .estadosunidos{
+.estadosunidos{
+    transform: translateY(-590px);
+    top: -200px;
+    margin-left: -650px;
+}
+.Japão{
+    transform: translateY(-580px);
+    top: -200px;
+    margin-left: 50px;
+}
+.espanha{
         transform: translateY(-590px);
-            top: -200px;
-            margin-left: -650px;
-    }
-    .Japão{
-        transform: translateY(-580px);
-            top: -200px;
-            margin-left: 50px;
-    }
-
-    .espanha{
-        transform: translateY(-590px);
-            top: -200px;
-            margin-left: -362px;
-    }
+        top: -200px;
+        margin-left: -362px;
+}
 </style>
 <script>
     function mostrarImagens() {
