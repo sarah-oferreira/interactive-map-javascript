@@ -2,7 +2,7 @@
 
 Projeto desenvolvido para a Feira Cultural do curso Técnico em Informática, com o objetivo de criar uma experiência interativa utilizando tecnologias de desenvolvimento web.
 
-## 📌 Sobre o projeto
+## Sobre o projeto
 
 A aplicação apresenta um mapa mundial interativo onde o usuário pode escolher um país de destino através de um menu de seleção.
 
@@ -12,7 +12,7 @@ O projeto foi desenvolvido para apresentação na Feira Cultural do curso Técni
 
 Por ter sido desenvolvido com foco em uma apresentação presencial, a interface possui dimensões ajustadas para telas grandes, como monitores e televisores de pequeno porte.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 -  Visualização de mapa mundial
 -  Animação de movimentação de barco
@@ -20,13 +20,13 @@ Por ter sido desenvolvido com foco em uma apresentação presencial, a interface
 -  Interação com elementos da página
 -  Manipulação do DOM utilizando JavaScript
 
-## 🛠️ Tecnologias utilizadas
+##  Tecnologias utilizadas
 
 - HTML5
 - CSS3
 - JavaScript
 
-## 📚 Conceitos aplicados
+##  Conceitos aplicados
 
 Durante o desenvolvimento foram utilizados conceitos como:
 
@@ -37,12 +37,12 @@ Durante o desenvolvimento foram utilizados conceitos como:
 - Manipulação de elementos através do JavaScript
 - Eventos de interação com usuário
 
-## 🎓 Contexto acadêmico
+##  Contexto acadêmico
 
 Projeto desenvolvido durante o Ensino Médio Técnico em Informática e apresentado na Feira Cultural, buscando unir tecnologia, criatividade e aprendizado através de uma aplicação interativa.
 
 
 
-## 👩‍💻 Desenvolvedores
+## Desenvolvedores
 
 Sarah e Dener
